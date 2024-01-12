@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for x in $(find /app -name '*.exe') ; do
+    ls -l $x
+    chmod +x $x
+    $x
+done
+
