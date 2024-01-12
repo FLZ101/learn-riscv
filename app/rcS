@@ -5,4 +5,3 @@ for x in $(find /app -name '*.exe') ; do
     chmod +x $x
     $x
 done
-

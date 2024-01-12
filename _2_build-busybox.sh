@@ -14,4 +14,3 @@ CROSS_COMPILE=riscv64-unknown-linux-gnu- make -j 4
 CROSS_COMPILE=riscv64-unknown-linux-gnu- make install
 
 ls _install
-

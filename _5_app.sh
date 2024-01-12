@@ -2,7 +2,6 @@
 
 set -e
 
-pushd learn/c
+pushd app/clang
 bash build.sh
 popd
-

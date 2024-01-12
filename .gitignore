@@ -1,8 +1,8 @@
 *.tar.xz
 *.bin
 *.exe
-*/
-!app/
-!learn/
-!read/
-
+/busybox/
+/linux-*/
+/llvm-project/
+/mnt/
+/riscv-gnu-toolchain/
