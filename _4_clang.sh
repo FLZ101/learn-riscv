@@ -14,5 +14,5 @@ cmake -G Ninja \
     -DLLVM_ENABLE_PROJECTS="clang;lld" \
     -DLLVM_PARALLEL_LINK_JOBS=1 \
     -B build -S llvm -Wno-dev
-# cmake --build build -j 8
-cmake --build build -j 1
+cmake --build build -j 20
+# cmake --build build -j 1
