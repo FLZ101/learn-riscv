@@ -223,9 +223,9 @@ A symbol’s binding determines the linkage visibility and behavior.
 * STB_WEAK
   Weak symbols resemble global symbols, but their deﬁnitions have lower precedence.
 
-When the link editor combines several relocatable object ﬁles, it does not allow multiple deﬁnitions of S T B _ G L O B A L symbols with the same name.  On the other hand, if a deﬁned global symbol exists, the appearance of a weak symbol with the same name will not cause an error. The link editor honors the global deﬁnition and ignores the weak ones. Similarly, if a common symbol exists (that is, a symbol whose st_shndx ﬁeld holds SHN_COMMON), the appearance of a weak symbol with the same name will not cause an error. The link editor honors the common deﬁnition and ignores the weak ones.
+When the link editor combines several relocatable object ﬁles, it does not allow multiple deﬁnitions of STB_GLOBAL symbols with the same name.  On the other hand, if a deﬁned global symbol exists, the appearance of a weak symbol with the same name will not cause an error. The link editor honors the global deﬁnition and ignores the weak ones. Similarly, if a common symbol exists (that is, a symbol whose st_shndx ﬁeld holds SHN_COMMON), the appearance of a weak symbol with the same name will not cause an error. The link editor honors the common deﬁnition and ignores the weak ones.
 
-When the link editor searches archive libraries, it extracts archive members that contain deﬁnitions of undeﬁned global symbols. The member’s deﬁnition may be either a global or a weak symbol.  The link editor does not extract archive members to resolve undeﬁned weak symbols. Unresolved weak symbols have a zero value.
+When the link editor searches archive libraries, it extracts archive members that contain deﬁnitions of undefined global symbols. The member’s deﬁnition may be either a global or a weak symbol.  The link editor does not extract archive members to resolve undeﬁned weak symbols. Unresolved weak symbols have a zero value.
 
 In each symbol table, all symbols with STB_LOCAL binding precede the weak and global symbols.
 

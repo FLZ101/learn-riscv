@@ -8,12 +8,13 @@ set -e
 pushd riscv-gnu-toolchain
 git checkout 2023.11.08
 sed -i -e 's@https://gcc.gnu.org/git/gcc.git@https://github.com/gcc-mirror/gcc.git@' .gitmodules
-./configure --prefix=$HOME/opt/riscv --enable-multilib
+make clean
+./configure --prefix=$HOME/opt/riscv-32 --disable-multilib --with-arch=rv32ima
 # make newlib
 make linux
 popd
 
 pushd app/hello
-bash build.sh
+bash build-32.sh
 popd
 

@@ -1,8 +1,12 @@
 *.tar.xz
 *.bin
 *.exe
+*.o
+*.i
 /busybox/
 /linux-*/
 /llvm-project/
 /mnt/
 /riscv-gnu-toolchain/
+/test-suite*
+/build-r/

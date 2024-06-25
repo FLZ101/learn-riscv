@@ -551,4 +551,3 @@ action table entry:
 type table entry:
 
 * pointer to a type information structure
-

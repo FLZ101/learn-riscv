@@ -1,0 +1,35 @@
+Computer Organization and Design - riscv Edition
+
+single cycle
+
+multiple cycle
+    fsm
+
+pipeline
+    hazard
+        stall
+        structural hazard
+        data hazard
+            WAW WAR RAW
+            forward (bypass)
+        control hazard
+            branch prediction
+
+    multiple-issue
+
+        static. VLIW
+
+        dynamic. superscalar
+            in order
+            out of order (execution)
+
+                Dynamic Scheduling
+
+                    scoreboarding
+                    Tomasulo’s algorithm
+
+        pipelined units
+            load/store
+            integer
+            float
+            ...

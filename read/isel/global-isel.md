@@ -1,0 +1,4 @@
+```cpp
+TargetPassConfig::addCoreISelPasses() {
+}
+```
