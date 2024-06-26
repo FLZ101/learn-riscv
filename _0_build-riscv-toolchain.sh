@@ -8,6 +8,7 @@ set -e
 pushd riscv-gnu-toolchain
 git checkout 2023.11.08
 sed -i -e 's@https://gcc.gnu.org/git/gcc.git@https://github.com/gcc-mirror/gcc.git@' .gitmodules
+# echo "check_certificate = off" >> ~/.wgetrc
 ./configure --prefix=$HOME/opt/riscv --enable-multilib
 # make newlib
 make linux
